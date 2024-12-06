@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href = "style.css"> 
+</head>
+<body>
+    
+    <div class = "barsup">
+        <ul>
+            <li><a href = "index.html">Accueil</a></li>
+            <li><a href = "pageInteractive.html">Corps</a></li>
+            <li><a href = "">info complémentaire</a></li>
+        </ul>
+    </div>
+    <h1>Les parties du corps ayant des similtudes</h1>
+    <div class = "corps_principal">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="500" height="800">
+            <image href="images/modele-humain-organes_1308-24148.jpg" x="0" y="0" width="500" height="800" />
+
+            <rect class="zone" x="150" y="275" width="78" height="150" onclick="showPopup('poumon')"/> 
+            <rect class="zone" x="230" y="325" width="75" height="80" onclick="showPopup('coeur')" />
+            <rect class="zone" x="350" y="250" width="75" height="200" onclick="showPopup('bras')" />
+            <rect class="zone" x="205" y="80" width="35" height="30" onclick="showPopup('oeil')" />
+            <rect class="zone" x="150" y="425" width="125" height="50" onclick="showPopup('foie')" />
+            <rect class="zone" x="275" y="425" width="50" height="75" onclick="showPopup('estomac')" />
+            <rect class="zone" x="225" y="140" width="50" height="20" onclick="showPopup('bouche')" />
+        
+        </svg>
+        
+
+    </div>
+
+    <div class="popup-overlay" id="popup-overlay" onclick="hidePopup()"></div>
+
+<!-- Popup avec du texte -->
+<div class="popup" id="popup">
+    <p id="popup-text">Texte de la popup ici</p>
+    <button onclick="hidePopup()">Fermer</button>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
