@@ -46,9 +46,9 @@
 }
 body{
     background-image: url("images/background.jpg");
-    background-size: cover;  /* L'image couvre toute la surface de l'écran */
-    background-position: center;  /* Centrer l'image */
-    background-repeat: no-repeat;  /* L'image ne se répète pas */
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
     margin: 0;
     padding: 0;
 }
@@ -62,7 +62,7 @@ body{
 }
 
 .zone {
-    fill: rgba(255, 0, 0, 0.1); /* Rouge semi-transparent */
+    fill: rgba(255, 0, 0, 0.1); 
     stroke: red;
     stroke-width: 0;
     transition: fill 0.3s, stroke 0.3s;
@@ -115,4 +115,12 @@ body{
 
 .popup button:hover {
     background-color: darkred;
+}
+
+.infoC{
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 2px solid #000000;
+    background-color: #2B4162;
+    color: antiquewhite;
 }
